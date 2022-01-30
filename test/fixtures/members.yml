@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_no: MyString
+  name: MyString
+  mobile: MyString
+  purchase_year: MyString
+  building: one
+
+two:
+  room_no: MyString
+  name: MyString
+  mobile: MyString
+  purchase_year: MyString
+  building: two

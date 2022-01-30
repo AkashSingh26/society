@@ -1,0 +1,25 @@
+<table class="table table-success table-striped">
+	<thead>
+		<tr>
+			<th scope="col">Room No.</th>
+			<th scope="col">Owner Name</th>
+			<th scope="col">Mobile No.</th>
+			<th scope="col">Purchase Year</th>
+			<th scope="col"> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @members.each do |member| %>
+			<tr>
+				<td><%= member.room_no %></td>
+				<td><%=member.name %></td>
+				<td><%=member.mobile %></td>
+				<td><%=member.purchase_year %></td><td></td>
+				<td><%= link_to "Edit Info", edit_member_path(member), class: "btn btn-info"%></td>
+			</tr>
+		<% end %>
+	</tbody>
+
+</table>
+		
+	<div><%= link_to "Add members", new_member_path, class: "btn btn-primary"%></div>
